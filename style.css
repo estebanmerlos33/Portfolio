@@ -1,8 +1,25 @@
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+/*
+@media screen and (min-width: 401px) {
+    html {
+        font-size: 18px;
+    }
+}
+*/
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/*
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 16px;
+    }
+}
+*/
 :root {
 
     --bgColor: rgb(14, 20, 27);
     --bgColorGradient: linear-gradient(180deg, rgba(14, 20, 27, 1) 0%, rgba(13, 18, 25, 1) 100%);
-    --tamanoFuenteNav: 2em;
+    --tamanoFuenteNav: 3em;
     --tamanoFuenteSeccion: 1.5em;
 
     --fuente: Noe Display, Georgia, Tahoma;
@@ -21,11 +38,13 @@
     --tamanoTituloSeccion: 2em;
     --tamanoSubTituloSeccion: 1.5em;
 
-    --tamanoIconosHabilidades: 5em;
+    --tamanoIconosHabilidades: 12vw;
     --tamanoFuenteForm: 1.5em;
 }
 
 html {
+    font-size: calc(17px + 0.390625vw);
+
     scroll-behavior: smooth;
     min-height: 100%;
 
@@ -40,8 +59,8 @@ body {
     margin: 0;
     margin: auto;
     padding: 0;
-    width: 98vw;
-    height: 100%;
+    width: 95vw;
+    height: 360vh;
     overflow-y: auto;
     color: var(--colorFuente);
 }
@@ -53,7 +72,6 @@ body {
     flex-direction: column;
     gap: 1%;
 
-    outline: red solid 2px;
 }
 
 nav {
@@ -63,8 +81,9 @@ nav {
 
     align-items: center;
     width: 100%;
-    height: 5%;
+    height: 7em;
     background-color: var(--colorBgNav);
+    margin-top: 1%;
     margin-bottom: 1%;
 }
 
@@ -105,16 +124,20 @@ nav {
 
 }
 
+
+
 .saludo {
     display: block;
+
+
 }
 
 .seccion {
     display: flex;
-    width: 1fr;
-    height: 1fr;
-    flex-shrink: 1;
-    flex-grow: 1;
+    width: 100%;
+    height: fit-content;
+    flex-shrink: 0.5;
+    flex-grow: 0;
     flex-direction: column;
     min-height: min-content;
     font-size: var(--tamanoFuenteSeccion);
@@ -152,13 +175,14 @@ nav {
 #titulo {
     font-size: var(--tamanoFuenteTitulo);
     color: var(--colorFuenteTitulo);
+
 }
 
 .tituloSeccion {
     display: block;
     height: fit-content;
     width: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
     font-size: var(--tamanoTituloSeccion);
     color: var(--colorFuenteTitulo);
 }
@@ -170,35 +194,54 @@ nav {
 
 }
 
+
+
 .contenidoSeccion {
     margin-bottom: 1%;
 }
 
+
 .contenidoHabilidades {
-    width: 95%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 7%;
+    width: 75%;
+    gap: 5%;
     height: fit-content;
     justify-content: space-evenly;
-    margin-bottom: 3%;
+    align-self: center;
+    margin-bottom: 1%;
 }
+
 
 .contenidoHabilidades img {
     width: var(--tamanoIconosHabilidades);
     height: var(--tamanoIconosHabilidades);
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .contenidoHabilidades svg {
 
     width: var(--tamanoIconosHabilidades);
     height: var(--tamanoIconosHabilidades);
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 
 }
 
+#habilidades {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#proyectos {
+    display: flex;
+    align-self: center;
+}
+
 #contacto {
+    display: flex;
+    align-self: center;
     height: 40vh;
     width: 100%;
     margin-bottom: 5%;
@@ -215,7 +258,7 @@ nav {
 }
 
 #emailForm {
-    width: 25%;
+    width: 50%;
 }
 
 #mensajeForm {
@@ -229,9 +272,13 @@ nav {
 }
 
 form button {
+    margin-top: 1%;
     background-color: var(--bgColor);
     color: var(--colorFuente);
-    width: 25%;
-    height: 50%;
+    width: 10em;
+    height: fit-content;
+    font-size: 2vh;
+    margin-bottom: 1;
+
 
 }
