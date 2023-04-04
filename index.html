@@ -132,9 +132,22 @@
             <div id="contacto" class="seccion">
                 <div class="tituloSeccion">Contacto</div>
                 <div class="contenidoSeccion">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas accusamus sed laboriosam
-                    dolores. Asperiores ducimus repudiandae illum, vitae rerum earum molestiae aperiam architecto, quia
-                    laborum facilis nihil praesentium voluptate?<br>
+                    <form action="https://formspree.io/f/mnqygrnr" method="POST">
+                        <div id="emailForm">
+                            <label>
+                                Tu email:
+                                <input type="email" name="email" class="campoForm" required>
+                            </label>
+                        </div>
+                        <div id="mensajeForm">
+                            <label>
+                                Tu mensaje:
+                                <textarea name="message" class="campoForm" required></textarea>
+                            </label>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>

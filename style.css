@@ -1,4 +1,7 @@
 :root {
+
+    --bgColor: rgb(14, 20, 27);
+    --bgColorGradient: linear-gradient(180deg, rgba(14, 20, 27, 1) 0%, rgba(13, 18, 25, 1) 100%);
     --tamanoFuenteNav: 2em;
     --tamanoFuenteSeccion: 1.5em;
 
@@ -18,6 +21,7 @@
     --tamanoTituloSeccion: 2em;
     --tamanoSubTituloSeccion: 1.5em;
 
+    --tamanoIconosHabilidades: 5em;
 }
 
 html {
@@ -27,8 +31,8 @@ html {
 }
 
 body {
-    background: rgb(14, 20, 27);
-    background: linear-gradient(180deg, rgba(14, 20, 27, 1) 0%, rgba(13, 18, 25, 1) 100%);
+    background: var(--bgColor);
+    background: var(--bgColorGradient);
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
@@ -47,6 +51,7 @@ body {
     height: 100%;
     flex-direction: column;
     gap: 1%;
+    overflow-y: auto;
 }
 
 nav {
@@ -55,7 +60,7 @@ nav {
     justify-content: space-evenly;
 
     align-items: center;
-    width: 98vw;
+    width: 100%;
     height: 5%;
     background-color: var(--colorBgNav);
     margin-bottom: 1%;
@@ -125,8 +130,8 @@ nav {
 #circulo {
     background: rgb(150, 154, 156);
     border-radius: 50%;
-    width: 230px;
-    height: 230px;
+    width: 10em;
+    height: 10em;
 }
 
 #containerFoto img {
@@ -167,25 +172,60 @@ nav {
     margin-bottom: 1%;
 }
 
+.contenidoHabilidades {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+    height: fit-content;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+}
+
 .contenidoHabilidades img {
-    width: 10em;
-    height: 10em;
+    width: var(--tamanoIconosHabilidades);
+    height: var(--tamanoIconosHabilidades);
     margin-bottom: 5%;
 }
 
 .contenidoHabilidades svg {
-    width: 10em;
-    height: 10em;
+
+    width: var(--tamanoIconosHabilidades);
+    height: var(--tamanoIconosHabilidades);
     margin-bottom: 5%;
+
 }
 
-.contenidoHabilidades {
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
-    justify-content: space-evenly;
-    gap: 5%;
-    height: fit-content;
-    margin-bottom: 10%;
+#contacto {
 
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.campoForm {
+    display: block;
+    background-color: var(--bgColor);
+    resize: none;
+    height: 2vh;
+    width: 80%;
+    color: var(--colorFuente)
+}
+
+#emailForm {
+
+    width: 50%;
+
+}
+
+
+#mensajeForm {
+    height: fit-content;
+    margin-top: 8%;
+    height: 10vh;
+}
+
+form button {
+    background-color: var(--bgColor);
+    color: var(--colorFuente)
 }
