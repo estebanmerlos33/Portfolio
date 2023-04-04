@@ -52,6 +52,8 @@ body {
     height: 100%;
     flex-direction: column;
     gap: 1%;
+
+    outline: red solid 2px;
 }
 
 nav {
