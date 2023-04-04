@@ -22,6 +22,7 @@
     --tamanoSubTituloSeccion: 1.5em;
 
     --tamanoIconosHabilidades: 5em;
+    --tamanoFuenteForm: 1.5em;
 }
 
 html {
@@ -40,7 +41,7 @@ body {
     margin: auto;
     padding: 0;
     width: 98vw;
-    height: 100vh;
+    height: 100%;
     overflow-y: auto;
     color: var(--colorFuente);
 }
@@ -51,7 +52,6 @@ body {
     height: 100%;
     flex-direction: column;
     gap: 1%;
-    overflow-y: auto;
 }
 
 nav {
@@ -197,10 +197,9 @@ nav {
 }
 
 #contacto {
-
-    height: 100%;
+    height: 40vh;
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .campoForm {
@@ -209,23 +208,28 @@ nav {
     resize: none;
     height: 2vh;
     width: 80%;
-    color: var(--colorFuente)
+    color: var(--colorFuente);
+    font: var(--tamanoFuenteForm);
 }
 
 #emailForm {
-
-    width: 50%;
-
+    width: 25%;
 }
-
 
 #mensajeForm {
     height: fit-content;
-    margin-top: 8%;
-    height: 10vh;
+    margin-top: 3%;
+
+}
+
+#mensajeForm textarea {
+    height: 10em;
 }
 
 form button {
     background-color: var(--bgColor);
-    color: var(--colorFuente)
+    color: var(--colorFuente);
+    width: 25%;
+    height: 50%;
+
 }
