@@ -1,6 +1,6 @@
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 /*
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 401px) {
     html {
         font-size: 18px;
     }
@@ -19,30 +19,32 @@
 
     --bgColor: rgb(14, 20, 27);
     --bgColorGradient: linear-gradient(180deg, rgba(14, 20, 27, 1) 0%, rgba(13, 18, 25, 1) 100%);
-    --tamanoFuenteNav: 2.7rem;
-    --tamanoFuenteSeccion: 1.7rem;
+    --tamanoFuenteNav: 3em;
+    --tamanoFuenteSeccion: 1.5em;
 
     --fuente: Noe Display, Georgia, Tahoma;
+    --colorFuente: rgb(160, 169, 187);
 
-    --colorFuente: rgb(212, 208, 208);
+    --colorFuenteNav: rgb(212, 208, 208);
     --colorBgNav: rgb(6, 34, 59);
-    --tamanoFuenteNav: 2.5rem;
+    --tamanoFuenteNav: 2em;
 
     --colorFuentePreTitulo: rgb(236, 116, 100);
-    --tamanoFuentePreTitulo: 2rem;
+    --tamanoFuentePreTitulo: 2em;
 
     --colorFuenteTitulo: rgb(230, 216, 216);
-    --tamanoFuenteTitulo: 0.5rem;
+    --tamanoFuenteTitulo: 2.5em;
 
-    --tamanoTituloSeccion: 2.5rem;
-    --tamanoSubTituloSeccion: 1.8rem;
+    --tamanoTituloSeccion: 2em;
+    --tamanoSubTituloSeccion: 1.5em;
 
     --tamanoIconosHabilidades: 12vw;
-    --tamanoFuenteForm: 2rem;
+    --tamanoFuenteForm: 1.5em;
 }
 
 html {
-    font-size: calc(15px + 0.390625vw);
+    font-size: calc(17px + 0.390625vw);
+
     scroll-behavior: smooth;
     min-height: 100%;
 
@@ -58,7 +60,7 @@ body {
     margin: auto;
     padding: 0;
     width: 95vw;
-    height: fit-content;
+    height: 360vh;
     overflow-y: auto;
     color: var(--colorFuente);
 }
@@ -76,6 +78,7 @@ nav {
     position: relative;
     display: flex;
     justify-content: space-evenly;
+
     align-items: center;
     width: 100%;
     height: 7em;
@@ -121,11 +124,12 @@ nav {
 
 }
 
-#containerPresentacion {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: fit-content
+
+
+.saludo {
+    display: block;
+
+
 }
 
 .seccion {
@@ -139,18 +143,20 @@ nav {
     font-size: var(--tamanoFuenteSeccion);
 }
 
+
+
 #containerFoto {
     flex-direction: row;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
-
+    justify-content: center;
 }
 
 #circulo {
     background: rgb(150, 154, 156);
     border-radius: 50%;
-    width: 5em;
-    height: 5em;
+    width: 10em;
+    height: 10em;
 }
 
 #containerFoto img {
@@ -160,8 +166,6 @@ nav {
     border-radius: 50%;
 }
 
-
-
 #preTitulo {
     font-size: var(--tamanoFuentePreTitulo);
     color: var(--colorFuentePreTitulo);
@@ -170,7 +174,7 @@ nav {
 
 #titulo {
     font-size: var(--tamanoFuenteTitulo);
-    color: var(--colorFuente);
+    color: var(--colorFuenteTitulo);
 
 }
 
@@ -180,13 +184,13 @@ nav {
     width: 100%;
     margin-bottom: 1%;
     font-size: var(--tamanoTituloSeccion);
-    color: var(--colorFuente);
+    color: var(--colorFuenteTitulo);
 }
 
 .subTituloSeccion {
-    margin-bottom: 1%;
+    margin-bottom: 3%;
     font-size: var(--tamanoSubTituloSeccion);
-    color: var(--colorFuente);
+    color: var(--colorFuenteTitulo);
 
 }
 
@@ -276,31 +280,5 @@ form button {
     font-size: 2vh;
     margin-bottom: 1;
 
-
-}
-
-@media screen and (min-width: 601px) {
-    #circulo {
-        width: 10em;
-        height: 10em;
-    }
-
-    :root {
-        --tamanoIconosHabilidades: 6vw;
-
-        --tamanoFuentePreTitulo: 2.5rem;
-
-        --tamanoFuenteTitulo: 3rem;
-    }
-
-    #containerPresentacion {
-        gap: 5%;
-
-    }
-
-    .contenidoHabilidades {
-
-        gap: 3%;
-    }
 
 }
