@@ -132,7 +132,6 @@ nav {
 }
 
 .seccion {
-    outline: rgb(72, 255, 0) solid 3px;
     display: flex;
     width: 100%;
     height: fit-content;
@@ -249,7 +248,6 @@ nav {
 
 #repositorios {
     height: fit-content;
-    outline: 2px rgb(25, 0, 255) solid;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -282,7 +280,6 @@ nav {
 
 
 #mensajeForm textarea {
-    outline: 1px rgb(0, 132, 255) solid;
     height: 10em;
 }
 
