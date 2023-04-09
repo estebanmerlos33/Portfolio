@@ -18,7 +18,7 @@
 :root {
     --bgColor: rgb(24, 38, 54);
     /*--bgColor: rgb(19, 30, 43);*/
-    --bgColorGradient: linear-gradient(180deg, rgb(27, 39, 53) 0%, rgb(23, 32, 44) 100%);
+    /*--bgColorGradient: linear-gradient(180deg, rgb(27, 39, 53) 0%, rgb(23, 32, 44) 100%);*/
     --tamanoFuenteNav: 3em;
     --tamanoFuenteSeccion: 1.5em;
 
@@ -53,24 +53,22 @@ html {
 
 body {
     background: var(--bgColor);
-    background: var(--bgColorGradient);
+    /*background: var(--bgColorGradient);*/
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     position: relative;
     margin: 0;
     margin: auto;
     padding: 0;
     width: 95vw;
     height: fit-content;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 
     color: var(--colorFuente);
 }
 
 #container {
-
-    outline: 1px rgb(0, 132, 255) solid;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -128,8 +126,6 @@ nav {
 .atajoNav a:active {
     color: #0000FF;
 }
-
-
 
 .saludo {
     display: block;
@@ -233,8 +229,6 @@ nav {
 
 }
 
-
-
 #habilidades {
     display: flex;
     justify-content: center;
@@ -246,8 +240,6 @@ nav {
     align-self: center;
 }
 
-
-
 #contacto {
     display: flex;
     align-self: center;
@@ -256,13 +248,11 @@ nav {
 }
 
 #repositorios {
-
     height: fit-content;
     outline: 2px rgb(25, 0, 255) solid;
     display: flex;
     justify-content: center;
     align-self: center;
-
 }
 
 .campoForm {
@@ -292,6 +282,7 @@ nav {
 
 
 #mensajeForm textarea {
+    outline: 1px rgb(0, 132, 255) solid;
     height: 10em;
 }
 
