@@ -6,7 +6,7 @@
         <title>Esteban Merlos - Portfolio</title>
 
         <!-- javascript-->
-        <script src="./script.js"></script>
+        <script defer src="./script.js"></script>
         <!-- css -->
         <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.cdnfonts.com/css/noe-display" rel="stylesheet">
@@ -15,7 +15,7 @@
     </head>
 
     <body>
-        <nav>
+        <nav class="hidden">
             <div class="atajoNav">
                 <a href="#presentacion" style="text-decoration: none;">
                     <div> Sobre mi</div>
@@ -42,19 +42,19 @@
             <div id="containerFoto" class="seccion">
 
                 <div id="circulo">
-                    <img src="./src/fotoPresentacion.jpg">
+                    <img class='hidden' src="./src/fotoPresentacion.jpg">
                     <br>
                 </div>
             </div>
 
             <div id="containerSaludo">
-                <div id="preTitulo" class="saludo">
+                <div id="preTitulo" class="saludo hidden ">
                     <p>
                         Hola, mi nombre es Esteban
                     <p>
                 </div>
 
-                <div id="titulo" class="saludo">
+                <div id="titulo" class="saludo hidden">
 
                     <h1>
                         Desarrollador Web y Tester
@@ -75,7 +75,7 @@
             <div id="habilidades" class="seccion">
                 <div class="tituloSeccion">Habilidades</div>
                 <div class="subTituloSeccion">Programación</div>
-                <div class="contenidoSeccion contenidoHabilidades">
+                <div class="contenidoSeccion contenidoHabilidades hidden">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
@@ -91,7 +91,7 @@
                 </div>
 
                 <div class="subTituloSeccion">Testing</div>
-                <div class="contenidoSeccion contenidoHabilidades">
+                <div class="contenidoSeccion contenidoHabilidades hidden">
                     <img src="https://asset.brandfetch.io/idIq_kF0rb/idZxkJkFIi.svg" />
                     <img src="https://asset.brandfetch.io/id3uyOwT-S/idgLpsQVbx.jpeg" />
                     <img src="https://asset.brandfetch.io/idD7RfhCFS/id3KSPzOxb.png" />
@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="subTituloSeccion">Otras herramientas</div>
-                <div class="contenidoSeccion contenidoHabilidades">
+                <div class="contenidoSeccion contenidoHabilidades hidden">
 
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original-wordmark.svg" />
@@ -135,7 +135,7 @@
 
             <div id="contacto" class="seccion">
                 <div class="tituloSeccion">Contacto</div>
-                <div class="contenidoSeccion contenidoHabilidades">
+                <div class="contenidoSeccion contenidoHabilidades hidden">
 
                     <a href="https://www.linkedin.com/in/esteban-merlos" target="_blank"><img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" /></a>
@@ -157,7 +157,7 @@
                         <div id="emailForm">
                             <label>
                                 Tu email:
-                                <input type="email" name="email" class="campoForm" required>
+                                <input type="email" name="email" class="campoForm " required>
                             </label>
                         </div>
                         <div id="mensajeForm">

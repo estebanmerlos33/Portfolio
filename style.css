@@ -61,16 +61,19 @@ body {
     padding: 0;
     width: 95vw;
     height: fit-content;
-    overflow-y: auto;
+    overflow-y: scroll;
     color: var(--colorFuente);
 }
 
 #container {
+
+    outline: 1px rgb(0, 132, 255) solid;
     display: flex;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     flex-direction: column;
     gap: 1%;
+    margin-bottom: 1%;
 
 }
 
@@ -78,7 +81,6 @@ nav {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-
     align-items: center;
     width: 100%;
     height: 5em;
@@ -121,7 +123,6 @@ nav {
 /* Mouse over link */
 .atajoNav a:active {
     color: #0000FF;
-
 }
 
 
@@ -131,12 +132,14 @@ nav {
 }
 
 .seccion {
+    outline: rgb(72, 255, 0) solid 3px;
     display: flex;
     width: 100%;
     height: fit-content;
     flex-shrink: 0.5;
     flex-grow: 0;
     flex-direction: column;
+
     min-height: min-content;
     font-size: var(--tamanoFuenteSeccion);
 }
@@ -244,12 +247,14 @@ nav {
 #contacto {
     display: flex;
     align-self: center;
-    height: 40vh;
+    height: fit-content;
     width: 100%;
-    margin-bottom: 5%;
 }
 
 #repositorios {
+
+    height: fit-content;
+    outline: 2px rgb(25, 0, 255) solid;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -260,7 +265,7 @@ nav {
     display: block;
     background-color: var(--bgColor);
     resize: none;
-    height: 2vh;
+
     width: 80%;
     color: var(--colorFuente);
     font: var(--tamanoFuenteForm);
@@ -293,7 +298,6 @@ form button {
     width: 10em;
     height: fit-content;
     font-size: 2vh;
-    margin-bottom: 2%;
     transition-duration: 0.5s;
 }
 
@@ -314,4 +318,14 @@ form button:hover {
         --tamanoIconos: 7vw;
     }
 
+}
+
+
+.hidden {
+    opacity: 0;
+    transition-duration: 1.5s;
+}
+
+.show {
+    opacity: 1;
 }
