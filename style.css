@@ -16,8 +16,7 @@
 }
 */
 :root {
-    --bgColor: rgb(24, 38, 54);
-    /*--bgColor: rgb(19, 30, 43);*/
+    --bgColor: rgb(28, 44, 63);
     /*--bgColorGradient: linear-gradient(180deg, rgb(27, 39, 53) 0%, rgb(23, 32, 44) 100%);*/
     --tamanoFuenteNav: 3em;
     --tamanoFuenteSeccion: 1.5em;
@@ -33,7 +32,7 @@
     --tamanoFuentePreTitulo: 2em;
 
     --colorFuenteTitulo: rgb(230, 216, 216);
-    --tamanoFuenteTitulo: 2.5em;
+    --tamanoFuenteTitulo: 4em;
 
     --tamanoTituloSeccion: 2em;
     --tamanoSubTituloSeccion: 1.5em;
@@ -50,6 +49,21 @@ html {
 
     height: fit-content;
 }
+
+@media screen and (min-width: 800px) {
+
+    html {
+        font-size: 18px;
+    }
+
+    :root {
+        --tamanoIconos: 7vw;
+
+    }
+
+}
+
+
 
 body {
     background: var(--bgColor);
@@ -127,9 +141,7 @@ nav {
     color: #0000FF;
 }
 
-.saludo {
-    display: block;
-}
+
 
 .seccion {
     display: flex;
@@ -166,6 +178,20 @@ nav {
     border-radius: 50%;
 }
 
+#containerSaludo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.saludo {
+    display: block;
+}
+
+
+
 #preTitulo {
     font-size: var(--tamanoFuentePreTitulo);
     color: var(--colorFuentePreTitulo);
@@ -173,10 +199,32 @@ nav {
 }
 
 #titulo {
+    font-weight: bold;
     font-size: var(--tamanoFuenteTitulo);
     color: var(--colorFuenteTitulo);
 
 }
+
+.typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(24) alternate, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
 
 .tituloSeccion {
     display: block;
@@ -188,12 +236,11 @@ nav {
 }
 
 .subTituloSeccion {
-    margin-bottom: 3%;
+    margin-bottom: 1%;
     font-size: var(--tamanoSubTituloSeccion);
     color: var(--colorFuenteTitulo);
 
 }
-
 
 
 .contenidoSeccion {
@@ -271,6 +318,7 @@ nav {
 
 #emailForm input {
     height: 1em;
+    border-color: var(--colorFuenteNav);
 }
 
 
@@ -298,20 +346,6 @@ form button:hover {
     transition-duration: 0.5s;
 
 }
-
-
-@media screen and (min-width: 800px) {
-
-    html {
-        font-size: 18px;
-    }
-
-    :root {
-        --tamanoIconos: 7vw;
-    }
-
-}
-
 
 .hidden {
     opacity: 0;
