@@ -150,9 +150,9 @@ nav {
     flex-shrink: 0.5;
     flex-grow: 0;
     flex-direction: column;
-
     min-height: min-content;
     font-size: var(--tamanoFuenteSeccion);
+    margin-top: 5%;
 }
 
 
