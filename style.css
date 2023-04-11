@@ -29,10 +29,10 @@
     --tamanoFuenteNav: 1.7em;
 
     --colorFuentePreTitulo: rgb(236, 116, 100);
-    --tamanoFuentePreTitulo: 2em;
+    --tamanoFuentePreTitulo: 1.5em;
 
     --colorFuenteTitulo: rgb(230, 216, 216);
-    --tamanoFuenteTitulo: 4em;
+    --tamanoFuenteTitulo: 3.5em;
 
     --tamanoTituloSeccion: 2em;
     --tamanoSubTituloSeccion: 1.5em;
@@ -488,6 +488,8 @@ html {
 
     :root {
         --tamanoIconos: 5em;
+        --tamanoFuentePreTitulo: 2em;
+        --tamanoFuenteTitulo: 4em;
 
     }
 
