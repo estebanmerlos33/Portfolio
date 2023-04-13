@@ -18,21 +18,21 @@
 :root {
     --bgColor: rgb(28, 44, 63);
     /*--bgColorGradient: linear-gradient(180deg, rgb(27, 39, 53) 0%, rgb(23, 32, 44) 100%);*/
-    --tamanoFuenteNav: 3em;
-    --tamanoFuenteSeccion: 1.5em;
+
+    --tamanoFuenteSeccion: 1em;
 
     --fuente: Noe Display, Georgia, Tahoma;
     --colorFuente: rgb(160, 169, 187);
 
     --colorFuenteNav: rgb(212, 208, 208);
     --colorBgNav: rgb(29, 48, 70);
-    --tamanoFuenteNav: 1.7em;
+    --tamanoFuenteNav: 2em;
 
     --colorFuentePreTitulo: rgb(236, 116, 100);
-    --tamanoFuentePreTitulo: 1.5em;
+    --tamanoFuentePreTitulo: 1em;
 
     --colorFuenteTitulo: rgb(230, 216, 216);
-    --tamanoFuenteTitulo: 3.5em;
+    --tamanoFuenteTitulo: 3em;
 
     --tamanoTituloSeccion: 2em;
     --tamanoSubTituloSeccion: 1.5em;
@@ -132,7 +132,7 @@ nav {
     flex-direction: column;
     min-height: min-content;
     font-size: var(--tamanoFuenteSeccion);
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 
@@ -355,8 +355,10 @@ html {
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
-    max-width: 1200px;
+    width: 70%;
+    /*max-width: 1200px;*/
     margin: 0 auto;
+    font-size: 0.7em;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -377,6 +379,7 @@ html {
     position: relative;
     background-color: inherit;
     width: 50%;
+    border: 5px solid rgb(6, 43, 77);
 }
 
 /* The circles on the timeline */
@@ -439,9 +442,11 @@ html {
 /* The actual content */
 .content {
     padding: 20px 20px;
-    background-color: rgb(48, 94, 138);
+    background-color: rgb(17, 65, 110);
     position: relative;
     border-radius: 10px;
+
+
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -487,6 +492,7 @@ html {
     }
 
     :root {
+        --tamanoFuenteSeccion: 1.5em;
         --tamanoIconos: 5em;
         --tamanoFuentePreTitulo: 2em;
         --tamanoFuenteTitulo: 4em;
