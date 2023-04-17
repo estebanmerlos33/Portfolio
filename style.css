@@ -1,51 +1,25 @@
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-/*
-@media screen and (min-width: 401px) {
-    html {
-        font-size: 18px;
-    }
-}
-*/
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-/*
-@media screen and (max-width: 400px) {
-    html {
-        font-size: 16px;
-    }
-}
-*/
 :root {
     --bgColor: rgb(28, 44, 63);
-    /*--bgColorGradient: linear-gradient(180deg, rgb(27, 39, 53) 0%, rgb(23, 32, 44) 100%);*/
 
-    --tamanoFuenteSeccion: 1em;
 
     --fuente: Noe Display, Georgia, Tahoma;
     --colorFuente: rgb(160, 169, 187);
-
     --colorFuenteNav: rgb(212, 208, 208);
     --colorBgNav: rgb(29, 48, 70);
-    --tamanoFuenteNav: 2em;
-
     --colorFuentePreTitulo: rgb(236, 116, 100);
-    --tamanoFuentePreTitulo: 1em;
-
     --colorFuenteTitulo: rgb(230, 216, 216);
-    --tamanoFuenteTitulo: 3em;
 
-    --tamanoTituloSeccion: 1.7em;
-    --tamanoSubTituloSeccion: 1.4em;
+    --tamanoIconos: 10em;
+    --tamanoCero: 0.8em;
+    --tamanoUno: 1em;
+    --tamanoDos: 2em;
+    --tamanoTres: 3em;
+    --tamanoCuatro: 4em;
 
-    --tamanoIconos: 15em;
-    --tamanoFuenteForm: 1.5em;
 }
 
-
-
-
-
 body {
+    outline: rgb(226, 93, 4) solid 2px;
     background: var(--bgColor);
     /*background: var(--bgColorGradient);*/
     background-repeat: no-repeat;
@@ -92,8 +66,8 @@ nav {
     flex-shrink: 1;
     justify-content: center;
     align-items: center;
-    font-size: var(--tamanoFuenteNav);
-    color: var(--colorFuente)
+    font-size: var(--tamanoDos);
+    color: var(--colorFuente);
 }
 
 .atajoNav a {
@@ -122,6 +96,19 @@ nav {
 }
 
 
+#preTitulo {
+    font-size: var(--tamanoDos);
+    color: var(--colorFuentePreTitulo);
+
+}
+
+#titulo {
+    width: 100%;
+    font-weight: bold;
+    font-size: var(--tamanoCuatro);
+    color: var(--colorFuenteTitulo);
+
+}
 
 .seccion {
     display: flex;
@@ -131,8 +118,11 @@ nav {
     flex-grow: 0;
     flex-direction: column;
     min-height: min-content;
-    font-size: var(--tamanoFuenteSeccion);
-    margin-bottom: 7%;
+}
+
+
+.contenidoSeccion {
+    font-size: var(--tamanoUno);
 }
 
 
@@ -145,16 +135,14 @@ nav {
     justify-content: center;
     flex-shrink: 0.5;
     flex-grow: 0;
-    margin-top: 3%;
-    margin-bottom: 3%;
 
 }
 
 #circulo {
     background: rgb(150, 154, 156);
     border-radius: 50%;
-    width: 7em;
-    height: 7em;
+    width: 10em;
+    height: 10em;
 }
 
 #containerFoto img {
@@ -179,26 +167,15 @@ nav {
 }
 
 
-
-#preTitulo {
-    font-size: var(--tamanoFuentePreTitulo);
-    color: var(--colorFuentePreTitulo);
-
-}
-
-#titulo {
-    font-weight: bold;
-    font-size: var(--tamanoFuenteTitulo);
-    color: var(--colorFuenteTitulo);
-
-}
+/*-----------------------------Typing-----------------------------*/
 
 .typing-demo {
-    width: 22ch;
-    animation: typing 2s steps(24) alternate, blink .5s step-end infinite alternate;
+    width: 23.5ch;
+    animation: typing 2s steps(24), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
+    margin-bottom: 5%;
 }
 
 @keyframes typing {
@@ -219,20 +196,22 @@ nav {
     height: fit-content;
     width: 100%;
     margin-bottom: 2%;
-    font-size: var(--tamanoTituloSeccion);
+    font-size: var(--TamanoTres);
     color: var(--colorFuenteTitulo);
 }
 
 .subTituloSeccion {
-    margin-bottom: 1%;
-    font-size: var(--tamanoSubTituloSeccion);
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: var(--TamanoUno);
     color: var(--colorFuenteTitulo);
 
 }
 
 
 .contenidoSeccion {
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    font-size: var(--tamanoCero);
 }
 
 
@@ -264,6 +243,7 @@ nav {
 }
 
 #habilidades {
+
     display: flex;
     justify-content: center;
     align-self: center;
@@ -295,32 +275,27 @@ nav {
 
     width: 80%;
     color: var(--colorFuente);
-    font: var(--tamanoFuenteForm);
+    font: var(--tamanoDos);
+
 }
+
 
 #emailForm {
-    height: fit-content;
-    width: 50%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
-
-#emailForm input {
-    height: 1em;
-    border-color: var(--colorFuenteNav);
-}
-
 
 #mensajeForm {
-    height: fit-content;
+    margin-bottom: 3%;
 }
 
-.contacto label {
-    font-size: var(--tamanoFuenteForm);
-}
 
+
+#emailForm input {
+    height: 2em;
+}
 
 #mensajeForm textarea {
-    height: 10em;
+    height: 12em;
 }
 
 form button {
@@ -350,7 +325,7 @@ form button:hover {
 
 
 
-/*Linea de tiempo*/
+/*---------------------------Linea de tiempo-------------------------------------*/
 
 .timeline * {
     box-sizing: border-box;
@@ -360,9 +335,9 @@ form button:hover {
 .timeline {
     position: relative;
     width: 70%;
-    /*max-width: 1200px;*/
+    max-width: 1200px;
     margin: 0 auto;
-    font-size: 0.7em;
+    font-size: var(--tamanoUno);
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -445,11 +420,10 @@ form button:hover {
 
 /* The actual content */
 .content {
-    padding: 20px 20px;
+    padding: 30px 30px;
     background-color: rgb(17, 65, 110);
     position: relative;
     border-radius: 10px;
-
 
 }
 
@@ -489,29 +463,61 @@ form button:hover {
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
+
+    :root {
+        --tamanoCero: 0.5em;
+        --tamanoUno: 1.5em;
+        --tamanoDos: 2.5em;
+        --tamanoTres: 3em;
+        --tamanoCuatro: 4em;
+        --tamanoIconos: 5em;
+    }
+
+
+
 
     html {
         font-size: calc(15px + 0.390625vw);
     }
 
-    :root {
-        --tamanoFuenteSeccion: 1.5em;
-        --tamanoIconos: 5em;
-        --tamanoFuentePreTitulo: 1.5em;
-        --tamanoFuenteTitulo: 3.5em;
-
+    body {
+        outline: purple solid 2px;
     }
 
     nav {
-        font-size: 0.7em;
+        font-size: var(--tamanoCero);
     }
 
     #circulo {
         background: rgb(150, 154, 156);
         border-radius: 50%;
-        width: 10em;
-        height: 10em;
+        width: 9em;
+        height: 9em;
+    }
+
+    .typing-demo {
+        width: 24ch;
+    }
+
+    .tituloSeccion {
+        font-size: var(--tamanoDos);
+    }
+
+    .subTituloSeccion {
+        font-size: var(--tamanoUno);
+    }
+
+    .contenidoSeccion {
+        font-size: var(--tamanoUno);
+    }
+
+    .timeline {
+        font-size: var(--tamanoUno);
+    }
+
+    .typing-demo {
+        width: 22ch;
     }
 
 
