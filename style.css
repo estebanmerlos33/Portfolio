@@ -239,7 +239,23 @@ nav {
 
 #proyectos {
   display: flex;
-  align-self: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.contenidoProyecto{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.proyecto{
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.proyecto img{
+  width: 70%;
+  height: 30%;
 }
 
 #contacto {
