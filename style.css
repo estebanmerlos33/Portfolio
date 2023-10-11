@@ -10,7 +10,7 @@
 
   --tamanoIconos: 10em;
   --tamanoCero: 0.8em;
-  --tamanoUno: 1em;
+  --tamanoUno: 1.3em;
   --tamanoDos: 2em;
   --tamanoTres: 3em;
   --tamanoCuatro: 4em;
@@ -131,7 +131,7 @@ a:active {
 
 .contenidoSeccion {
   margin-bottom: 3%;
-  font-size: var(--tamanoDos);
+  font-size: var(--tamanoUno);
 }
 
 #containerFoto {
@@ -238,7 +238,6 @@ a:active {
   position: relative;
   width: 100%;
   height: fit-content;
-  outline: solid green 1px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -247,7 +246,6 @@ a:active {
 .proyecto {
   position: relative;
   display: inline-block;
-  outline: solid red 1px;
   width: 30%;
   height: 100%;
 }
