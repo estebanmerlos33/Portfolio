@@ -11,9 +11,11 @@
   --tamanoIconos: 10em;
   --tamanoCero: 0.8em;
   --tamanoUno: 1em;
+  --tamanoUnoYMedio: 1.5em;
   --tamanoDos: 2em;
   --tamanoTres: 3em;
   --tamanoCuatro: 4em;
+
 }
 
 body {
@@ -213,7 +215,7 @@ a:active {
   justify-content: space-evenly;
   align-self: center;
   margin-bottom: 1%;
-  font-size: var(--tamanoUno);
+  font-size: var(--tamanoCero);
 }
 
 .contenidoHabilidades img {
