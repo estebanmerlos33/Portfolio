@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Esteban Merlos - Portfolio</title>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Esteban Merlos - Portfolio</title>
+    <!-- javascript-->
+    <script defer src="./script.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.cdnfonts.com/css/noe-display" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+  </head>
 
-        <!-- javascript-->
-        <script defer src="./script.js"></script>
-        <!-- css -->
-        <link rel="stylesheet" href="./style.css">
-        <link href="https://fonts.cdnfonts.com/css/noe-display" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-    </head>
-
-    <body>
-        <nav class="hidden">
-            <div class="atajoNav">
-                <a href="#presentacion" style="text-decoration: none;">
-                    <div> Sobre mi</div>
-                </a>
-            </div>
-            <div class="atajoNav">
-                <a href="#habilidades" style="text-decoration: none;">
-                    <div> Habilidades</div>
-                </a>
-            </div>
-            <div class="atajoNav">
-                <a href="#proyectos" style="text-decoration: none;">
-                    <div> Proyectos</div>
-                </a>
-            </div>
-            <div class="atajoNav">
-                <a href="#contacto" style="text-decoration: none;">
-                    <div> Contacto</div>
-                </a>
-            </div>
-        </nav>
-        <div id="container">
-<!-----
+  <body>
+    <nav class="hidden">
+      <div class="atajoNav">
+        <a href="#presentacion" style="text-decoration: none">
+          <div>Sobre mi</div>
+        </a>
+      </div>
+      <div class="atajoNav">
+        <a href="#habilidades" style="text-decoration: none">
+          <div>Habilidades</div>
+        </a>
+      </div>
+      <div class="atajoNav">
+        <a href="#proyectos" style="text-decoration: none">
+          <div>Proyectos</div>
+        </a>
+      </div>
+      <div class="atajoNav">
+        <a href="#contacto" style="text-decoration: none">
+          <div>Contacto</div>
+        </a>
+      </div>
+    </nav>
+    <div id="container">
+      <!-----
             <div id="containerFoto">
 
                 <div id="circulo">
@@ -47,39 +48,36 @@
                 </div>
             </div>
 ---->
-            <div id="containerSaludo">
+      <div id="containerSaludo">
+        <div id="preTitulo" class="saludo hidden">
+          <p>Hola, mi nombre es Esteban</p>
+          <p></p>
+        </div>
 
-                <div id="preTitulo" class="saludo hidden ">
-                    <p>Hola, mi nombre es Esteban
-                    <p>
-                </div>
+        <div id="titulo">
+          <div>
+            <div class="typing-demo">Desarrollador/Tester Web</div>
+          </div>
+        </div>
+      </div>
+      <div id="presentacion" class="seccion">
+        <div class="tituloSeccion">Sobre mi</div>
+        <div class="contenidoSeccion sobreMi">
+          <br />Desde que descubrí el mundo IT, mi enfoque principal siempre ha
+          sido aprender y desarrollar mis habilidades en este campo.
+          <br /><br />Mi enfoque se basa en la atención al detalle, el
+          aprendizaje constante y la resolución de problemas, y siempre estoy
+          buscando oportunidades para expandir mi conocimiento y mejorar mis
+          habilidades técnicas. <br />
+          <br />Mi objetivo principal es ofrecer resultados de calidad y
+          considero que el trabajo en equipo es la forma más efectiva de trabajo
+          y la forma más nutritiva de aprendizaje.
+        </div>
+      </div>
 
-                <div id="titulo">
-
-                    <div>
-                        <div class="typing-demo">
-
-                            Desarrollador/Tester Web
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div id="presentacion" class="seccion">
-                <div class="tituloSeccion">Sobre mi</div>
-                <div class="contenidoSeccion sobreMi">
-                    <br>Desde que descubrí el mundo IT, mi enfoque principal siempre ha sido aprender y desarrollar mis habilidades en este campo.
-                    <br><br>Mi enfoque se basa en la atención al detalle, el aprendizaje constante y la resolución de problemas, y siempre estoy buscando oportunidades para expandir mi conocimiento y mejorar mis habilidades técnicas. <br>
-                    <br>Mi objetivo principal es ofrecer resultados de calidad y considero que el trabajo en equipo es la forma más efectiva de trabajo y la forma más nutritiva de aprendizaje.
-                </div>
-
-            </div>
-
-            <div id="lineaTiempo" class="seccion">
-
-                <div class="timeline">
-                    <!----
+      <div id="lineaTiempo" class="seccion">
+        <div class="timeline">
+          <!----
                     <div class="container right">
                         <div class="content">
                             <h2>2016</h2>
@@ -97,140 +95,179 @@
                         </div>
                     </div>
                     --->
-                    <div class="container right hidden">
-                        <div class="content">
-                            <h2>2022 - Actualidad</h2>
-                            <p>Consultor Analista QA en Connectis S.A.</p>
-                        </div>
-                    </div>
-                    <div class="container left hidden">
-                        <div class="content">
-                            <h2>2022</h2>
-                            <p>Egreso como Técnico Universitario en Informática</p>
-                        </div>
-                    </div>
-                    <div class="container right hidden">
-                        <div class="content">
-                            <h2>2014</h2>
-                            <p>Egreso como Bachiller en Ciencias Sociales</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="container right hidden">
+            <div class="content">
+              <h2>2022 - Actualidad</h2>
+              <p>Consultor Analista QA en Connectis S.A.</p>
             </div>
-
-            <div id="habilidades" class="seccion">
-                <div class="tituloSeccion">Habilidades</div>
-                <div class="subTituloSeccion">Programación y bases de datos</div>
-                <div class="contenidoSeccion contenidoHabilidades hidden">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
-
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-
-                </div>
-
-                <div class="subTituloSeccion">Testing</div>
-                <div class="contenidoSeccion contenidoHabilidades hidden">
-                    <img src="https://asset.brandfetch.io/idIq_kF0rb/idZxkJkFIi.svg" />
-                    <img src="https://asset.brandfetch.io/id3uyOwT-S/idgLpsQVbx.jpeg" />
-                    <img src="https://asset.brandfetch.io/idD7RfhCFS/id3KSPzOxb.png" />
-
-                    <img src="https://jmeter.apache.org/images/jmeter_square.svg" />
-
-                    <svg style="color: rgb(226, 118, 29);" role="img" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <title>Postman</title>
-                        <path
-                            d="M13.527.099C6.955-.744.942 3.9.099 10.473c-.843 6.572 3.8 12.584 10.373 13.428 6.573.843 12.587-3.801 13.428-10.374C24.744 6.955 20.101.943 13.527.099zm2.471 7.485a.855.855 0 0 0-.593.25l-4.453 4.453-.307-.307-.643-.643c4.389-4.376 5.18-4.418 5.996-3.753zm-4.863 4.861l4.44-4.44a.62.62 0 1 1 .847.903l-4.699 4.125-.588-.588zm.33.694l-1.1.238a.06.06 0 0 1-.067-.032.06.06 0 0 1 .01-.073l.645-.645.512.512zm-2.803-.459l1.172-1.172.879.878-1.979.426a.074.074 0 0 1-.085-.039.072.072 0 0 1 .013-.093zm-3.646 6.058a.076.076 0 0 1-.069-.083.077.077 0 0 1 .022-.046h.002l.946-.946 1.222 1.222-2.123-.147zm2.425-1.256a.228.228 0 0 0-.117.256l.203.865a.125.125 0 0 1-.211.117h-.003l-.934-.934-.294-.295 3.762-3.758 1.82-.393.874.874c-1.255 1.102-2.971 2.201-5.1 3.268zm5.279-3.428h-.002l-.839-.839 4.699-4.125a.952.952 0 0 0 .119-.127c-.148 1.345-2.029 3.245-3.977 5.091zm3.657-6.46l-.003-.002a1.822 1.822 0 0 1 2.459-2.684l-1.61 1.613a.119.119 0 0 0 0 .169l1.247 1.247a1.817 1.817 0 0 1-2.093-.343zm2.578 0a1.714 1.714 0 0 1-.271.218h-.001l-1.207-1.207 1.533-1.533c.661.72.637 1.832-.054 2.522zM18.855 6.05a.143.143 0 0 0-.053.157.416.416 0 0 1-.053.45.14.14 0 0 0 .023.197.141.141 0 0 0 .084.03.14.14 0 0 0 .106-.05.691.691 0 0 0 .087-.751.138.138 0 0 0-.194-.033z"
-                            fill="#e2761d"></path>
-                    </svg>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" />
-                    <img src="https://playwright.dev/img/playwright-logo.svg">
-
-                </div>
-
-                <div class="subTituloSeccion">Otras herramientas</div>
-                <div class="contenidoSeccion contenidoHabilidades hidden">
-
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original-wordmark.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg" />
-
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
-
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-                </div>
-
+          </div>
+          <div class="container left hidden">
+            <div class="content">
+              <h2>2022</h2>
+              <p>Egreso como Técnico Universitario en Informática</p>
             </div>
-            <div id="proyectos" class="seccion">
-                <div class="tituloSeccion">Proyectos</div>
-                <div class="contenidoSeccion contenidoProyecto">
-                    <div class = "proyecto">
-                        Portfolio Web <br>
-                        <a href = "https://estebanmerlos33.github.io/Portfolio/">Link</a> <br>
-                        Portfolio web personal con HTML, CSS y Javascript.
-                    </div>
-                    <div class = "proyecto">
-                        TodoList <br> 
-                        <a href = "https://todo-list-omega-roan.vercel.app/">Link</a> <br>
-                        Lista de pendientes con HTML, CSS, Javacript, React y Firebase.
-                    </div>
-                </div>
-
+          </div>
+          <div class="container right hidden">
+            <div class="content">
+              <h2>2014</h2>
+              <p>Egreso como Bachiller en Ciencias Sociales</p>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div id="contacto" class="seccion">
-                <div class="tituloSeccion">Contacto</div>
-                <div class="contenidoSeccion">
-                    Gracias por visitar mi portafolio web. Si deseas saber más sobre mi trabajo, colaborar en un proyecto o simplemente tener una conversación, no dudes en contactarme.
-                    <br><br>
-                </div>
-                <div class="contenidoSeccion contenidoHabilidades hidden">
+      <div id="habilidades" class="seccion">
+        <div class="tituloSeccion">Habilidades</div>
+        <div class="subTituloSeccion">Programación y bases de datos</div>
+        <div class="contenidoSeccion contenidoHabilidades hidden">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          />
 
-                  
-                    <a href="https://www.linkedin.com/in/esteban-merlos" target="_blank"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" /></a>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
+          />
 
-                    <a href="https://gitlab.com/estebanmerlos33" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+          />
+        </div>
 
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-plain-wordmark.svg" />
-                    </a>
-                    <a href="https://github.com/estebanmerlos33" target="_blank">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
-                    </a>
+        <div class="subTituloSeccion">Testing</div>
+        <div class="contenidoSeccion contenidoHabilidades hidden">
+          <img src="https://asset.brandfetch.io/idIq_kF0rb/idZxkJkFIi.svg" />
+          <img src="https://asset.brandfetch.io/id3uyOwT-S/idgLpsQVbx.jpeg" />
+          <img src="https://asset.brandfetch.io/idD7RfhCFS/id3KSPzOxb.png" />
 
-                </div>
-                <div class="contenidoContacto">
+          <img src="https://jmeter.apache.org/images/jmeter_square.svg" />
 
-                    <form action="https://formspree.io/f/mnqygrnr" method="POST">
-                        <div id="emailForm">
-                            <label>
-                                Tu email:
-                                <input type="email" name="email" class="campoForm " required>
-                            </label>
-                        </div>
-                        <div id="mensajeForm">
-                            <label>
-                                Tu mensaje:
-                                <textarea name="message" class="campoForm" required></textarea>
-                            </label>
+          <svg
+            style="color: rgb(226, 118, 29)"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Postman</title>
+            <path
+              d="M13.527.099C6.955-.744.942 3.9.099 10.473c-.843 6.572 3.8 12.584 10.373 13.428 6.573.843 12.587-3.801 13.428-10.374C24.744 6.955 20.101.943 13.527.099zm2.471 7.485a.855.855 0 0 0-.593.25l-4.453 4.453-.307-.307-.643-.643c4.389-4.376 5.18-4.418 5.996-3.753zm-4.863 4.861l4.44-4.44a.62.62 0 1 1 .847.903l-4.699 4.125-.588-.588zm.33.694l-1.1.238a.06.06 0 0 1-.067-.032.06.06 0 0 1 .01-.073l.645-.645.512.512zm-2.803-.459l1.172-1.172.879.878-1.979.426a.074.074 0 0 1-.085-.039.072.072 0 0 1 .013-.093zm-3.646 6.058a.076.076 0 0 1-.069-.083.077.077 0 0 1 .022-.046h.002l.946-.946 1.222 1.222-2.123-.147zm2.425-1.256a.228.228 0 0 0-.117.256l.203.865a.125.125 0 0 1-.211.117h-.003l-.934-.934-.294-.295 3.762-3.758 1.82-.393.874.874c-1.255 1.102-2.971 2.201-5.1 3.268zm5.279-3.428h-.002l-.839-.839 4.699-4.125a.952.952 0 0 0 .119-.127c-.148 1.345-2.029 3.245-3.977 5.091zm3.657-6.46l-.003-.002a1.822 1.822 0 0 1 2.459-2.684l-1.61 1.613a.119.119 0 0 0 0 .169l1.247 1.247a1.817 1.817 0 0 1-2.093-.343zm2.578 0a1.714 1.714 0 0 1-.271.218h-.001l-1.207-1.207 1.533-1.533c.661.72.637 1.832-.054 2.522zM18.855 6.05a.143.143 0 0 0-.053.157.416.416 0 0 1-.053.45.14.14 0 0 0 .023.197.141.141 0 0 0 .084.03.14.14 0 0 0 .106-.05.691.691 0 0 0 .087-.751.138.138 0 0 0-.194-.033z"
+              fill="#e2761d"
+            ></path>
+          </svg>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+          />
+          <img src="https://playwright.dev/img/playwright-logo.svg" />
+        </div>
 
-                        </div>
-                        <button type="submit">Enviar</button>
-                    </form>
+        <div class="subTituloSeccion">Otras herramientas</div>
+        <div class="contenidoSeccion contenidoHabilidades hidden">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg"
+          />
 
-                </div>
-            </div>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+          />
 
-    </body>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+          />
+        </div>
+      </div>
 
+      <div id="proyectos" class="containerProyectos">
+        <div class="tituloSeccion">Proyectos</div>
+
+        <div class="proyecto">
+          <div class="subTituloSeccion">Portfolio Web</div>
+          <a
+            class="contenidoSeccion"
+            href="https://estebanmerlos33.github.io/Portfolio/"
+            >Link</a
+          >
+          <br />
+          Portfolio web personal con HTML, CSS y Javascript.
+        </div>
+
+        <div class="proyecto">
+          <div class="subTituloSeccion">TodoList</div>
+          <a
+            class="contenidoSeccion"
+            href="https://todo-list-omega-roan.vercel.app/"
+            >Link</a
+          >
+          <br />
+          Lista de pendientes con HTML, CSS, Javacript, React y Firebase.
+        </div>
+      </div>
+    </div>
+
+    <div id="contacto" class="seccion">
+      <div class="tituloSeccion">Contacto</div>
+      <div class="contenidoSeccion">
+        Gracias por visitar mi portafolio web. Si deseas saber más sobre mi
+        trabajo, colaborar en un proyecto o simplemente tener una conversación,
+        no dudes en contactarme.
+        <br /><br />
+      </div>
+      <div class="contenidoSeccion contenidoHabilidades hidden">
+        <a href="https://www.linkedin.com/in/esteban-merlos" target="_blank"
+          ><img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+        /></a>
+
+        <a href="https://gitlab.com/estebanmerlos33" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-plain-wordmark.svg"
+          />
+        </a>
+        <a href="https://github.com/estebanmerlos33" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+          />
+        </a>
+      </div>
+      <div class="contenidoContacto">
+        <form action="https://formspree.io/f/mnqygrnr" method="POST">
+          <div id="emailForm">
+            <label>
+              Tu email:
+              <input type="email" name="email" class="campoForm" required />
+            </label>
+          </div>
+          <div id="mensajeForm">
+            <label>
+              Tu mensaje:
+              <textarea name="message" class="campoForm" required></textarea>
+            </label>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

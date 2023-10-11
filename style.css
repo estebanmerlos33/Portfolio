@@ -72,22 +72,22 @@ nav {
 }
 
 /* Unvisited link  */
-.atajoNav a:visited {
+a:visited {
   color: var(--colorFuenteNav);
 }
 
-.atajoNav a:link {
+a:link {
   transition-duration: 0.5s;
 }
 
 /* Visited link    */
-.atajoNav a:hover {
+a:hover {
   color: #eeecee;
   transition-duration: 0.5s;
 }
 
 /* Mouse over link */
-.atajoNav a:active {
+a:active {
   color: #0000ff;
 }
 
@@ -237,25 +237,22 @@ nav {
   align-self: center;
 }
 
-#proyectos {
+.containerProyectos {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  outline: solid green 1px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-
-.contenidoProyecto{
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-.proyecto{
-  margin-left: 7%;
-  margin-right: 7%;
-}
-.proyecto img{
-  width: 70%;
-  height: 30%;
+.proyecto {
+  position: relative;
+  display: inline-block;
+  outline: solid red 1px;
+  width: 30%;
+  height: 100%;
 }
 
 #contacto {
@@ -486,8 +483,6 @@ form button:hover {
     height: 10em;
   }
 
-
-
   .tituloSeccion {
     font-size: var(--tamanoDos);
   }
@@ -505,26 +500,26 @@ form button:hover {
   }
 
   .typing-demo {
-  width: 22ch;
-  animation: typing 8s steps(22) infinite,
-    blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  margin-bottom: 5%;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  20%,
-  80% {
     width: 22ch;
+    animation: typing 8s steps(22) infinite,
+      blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    margin-bottom: 5%;
   }
 
-  100% {
-    width: 0;
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    20%,
+    80% {
+      width: 22ch;
+    }
+
+    100% {
+      width: 0;
+    }
   }
-}
 }
