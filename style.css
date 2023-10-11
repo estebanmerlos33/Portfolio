@@ -114,7 +114,7 @@ a:active {
 }
 
 .contenidoSeccion {
-  font-size: var(--tamanoUno);
+  font-size: var(--tamanoDos);
 }
 
 #containerFoto {
@@ -191,14 +191,14 @@ a:active {
   height: fit-content;
   width: 100%;
   margin-bottom: 2%;
-  font-size: var(--TamanoTres);
+  font-size: var(--tamanoTres);
   color: var(--colorFuenteTitulo);
 }
 
 .subTituloSeccion {
   margin-top: 5%;
   margin-bottom: 3%;
-  font-size: var(--TamanoUno);
+  font-size: var(--tamanoUno);
   color: var(--colorFuenteTitulo);
 }
 
@@ -331,7 +331,7 @@ form button:hover {
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
-  font-size: var(--tamanoUno);
+  font-size: var(--tamanoDos);
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -521,5 +521,8 @@ form button:hover {
     100% {
       width: 0;
     }
+  }
+  .timeline {
+    font-size: var(--tamanoUno);
   }
 }
