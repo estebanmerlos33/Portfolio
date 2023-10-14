@@ -1,4 +1,4 @@
-# Portafolio de Esteban Merlos
+# Portfolio de Esteban Merlos
 
 ¡Bienvenido a mi portafolio en GitHub! Este repositorio muestra algunos de los proyectos en los que he trabajado y proporciona información sobre mí. Siéntete libre de explorar, y si tienes alguna pregunta o te gustaría colaborar, no dudes en ponerte en contacto.
 
