@@ -11,7 +11,7 @@
 ## Sobre Mí
 Programador y tester Web de 26 años, originario de Buenos Aires, Argentina. Graduado como Técnico Universitario en Informática en la Universidad Nacional General Sarmiento. 
 
-Soy un apasionado del área IT con de experiencia en desarrrollo frontend, backend y testing, y mi objetivo es seguir adquiriendo experiencia para continuar desarrllándome como profesional en el Mundo IT. 
+Soy un apasionado del área IT con de experiencia en desarrrollo frontend, backend y testing, y mi objetivo es seguir adquiriendo experiencia para continuar desarrllándome como profesional en el mundo IT. 
 
 Puedes obtener más información sobre mí en mi [sitio web personal](https://estebanmerlos33.github.io/Portfolio/) o conectarte conmigo en [LinkedIn](https://www.linkedin.com/in/esteban-merlos).
 
