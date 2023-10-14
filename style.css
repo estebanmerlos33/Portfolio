@@ -91,6 +91,7 @@ a:active {
 #preTitulo {
   font-size: var(--tamanoUno);
   color: var(--colorFuentePreTitulo);
+  margin-bottom: 0;
 }
 
 #titulo {
@@ -239,6 +240,7 @@ a:active {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 3%;
 }
 
 .proyecto {
@@ -332,7 +334,7 @@ form button:hover {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  width: 70%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   font-size: var(--tamanoDos);
@@ -418,7 +420,7 @@ form button:hover {
 
 /* The actual content */
 .content {
-  padding: 30px 30px;
+  padding: 20px 20px;
   background-color: rgb(17, 65, 110);
   position: relative;
   border-radius: 10px;
