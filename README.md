@@ -32,6 +32,7 @@ Puedes explorar mis proyectos en mi [perfil de GitHub](https://github.com/esteba
 Tengo experiencia en las siguientes habilidades y tecnologías:
 - Frontend (HTML,CSS,Javascript, React)
 - Backend (PostgreSQL, MySQL, OracleSQL, NodeJS, Firebase)
+- Lenguajes de programación (Java, Python, C, Go, Assembler)
 - Testing(Selenium, Cypress, JUnit5, JMeter, Postman, PlayWright, Jenkins)
 - Otros (Git, Heroku, Jira, Linux, Bash)
 
