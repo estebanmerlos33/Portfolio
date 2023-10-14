@@ -64,7 +64,7 @@ nav {
   color: var(--colorFuente);
 }
 
-.atajoNav a {
+a {
   color: var(--colorFuenteNav);
 }
 
