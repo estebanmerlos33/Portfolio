@@ -91,7 +91,7 @@ a:active {
 #preTitulo {
   font-size: var(--tamanoUno);
   color: var(--colorFuentePreTitulo);
-  margin-bottom: 0;
+  margin-bottom: 3%;
 }
 
 #titulo {
