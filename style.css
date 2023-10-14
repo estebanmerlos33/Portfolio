@@ -79,13 +79,13 @@ a:link {
 
 /* Visited link*/
 a:hover {
-  color: #eeecee;
+  color: var(--colorFuenteNav);
   transition-duration: 0.5s;
 }
 
 /* Mouse over link */
 a:active {
-  color: #0000ff;
+  color: var(--colorFuenteNav);
 }
 
 #preTitulo {
