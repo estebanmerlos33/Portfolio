@@ -15,12 +15,12 @@ Soy un apasionado del área IT con de experiencia en desarrrollo frontend, backe
 ## Proyectos
 Aquí se muestran algunos de los proyectos en los que he trabajado. Haz clic en los nombres de los proyectos para ver más detalles:
 
-1. Portfolio Web(https://estebanmerlos33.github.io/Portfolio): Página Web personal
+1. [Portfolio Web](https://estebanmerlos33.github.io/Portfolio): Página Web personal
    - Tecnologías utilizadas: HTML,CSS,Javascript
    - https://github.com/estebanmerlos33/Portfolio
    - https://estebanmerlos33.github.io/Portfolio
 
-2. TodoList(https://todo-list-omega-roan.vercel.app/): Lista de tareas pendientes
+2. [TodoList](https://todo-list-omega-roan.vercel.app/): Lista de tareas pendientes
    - Tecnologías utilizadas: HTML, CSS, Javacript, React y Firebase
    - https://github.com/estebanmerlos33/TodoList
    - https://todo-list-omega-roan.vercel.app
