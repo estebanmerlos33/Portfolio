@@ -159,7 +159,6 @@ a:active {
 }
 
 #containerSaludo {
-  outline:red solid 1px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
