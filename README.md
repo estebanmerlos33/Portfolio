@@ -62,7 +62,7 @@ Aquí se muestran algunos de los proyectos en los que he trabajado.
 Puedes explorar mis proyectos en mi [perfil de GitHub](https://github.com/estebanmerlos33).
 
 ## Habilidades
-Tengo experiencia en las siguientes habilidades y tecnologías:
+Tengo experiencia en las siguientes herramientas y tecnologías:
 - Frontend (HTML,CSS,Javascript, React)
 - Backend (PostgreSQL, MySQL, OracleSQL, NodeJS, Firebase)
 - Lenguajes de programación (Java, Python, C, Go, Assembler)
