@@ -16,7 +16,7 @@ Soy un apasionado del área IT con de experiencia en desarrrollo frontend, backe
 Puedes obtener más información sobre mí en mi [sitio web personal](https://estebanmerlos33.github.io/Portfolio/) o conectarte conmigo en [LinkedIn](https://www.linkedin.com/in/esteban-merlos).
 
 ## Proyectos
-Aquí se muestran algunos de los proyectos en los que he trabajado. Haz clic en los nombres de los proyectos para ver más detalles:
+Aquí se muestran algunos de los proyectos en los que he trabajado.
 
 1. Portfolio Web: Página Web personal
    - Tecnologías utilizadas: HTML,CSS,Javascript
