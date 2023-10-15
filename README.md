@@ -28,6 +28,36 @@ Aquí se muestran algunos de los proyectos en los que he trabajado. Haz clic en 
    - [Página](https://todo-list-omega-roan.vercel.app/)
    - [Repositorio](https://github.com/estebanmerlos33/TodoList)
 
+3. Compra y venta de vehículos: Trabajo práctico universitario. Maqueta de página web de compra y venta de vehículos.
+   - Tecnologías utilizadas: HTML, CSS y Javacript
+   - [Repositorio](https://gitlab.com/Nico2k20/trabajo-especificacion/-/tree/master/especificacion?ref_type=heads)
+
+4. Espacio virtual de difusión: Trabajo práctico universitario. Pagína web de difusión para talleres de artesanías. 
+   - Tecnologías utilizadas: HTML, CSS, Javascript, JQuery y
+              librería Leaflet.
+   - [Repositorio](https://gitlab.com/estebanmerlos33/espacio-virtual-de-difusion-tp-ing-soft)
+5. Conjunto dominante mínimo: Trabajo práctico universitario. Búsqueda de conjunto dominante mínimo de un grafo con Java. 
+   - Tecnologías utilizadas: Java
+   - [Repositorio](https://gitlab.com/Nico2k20/tp-3-skynet)
+6. Diseño de regiones: Trabajo práctico universitario. División de un grafo en regiones mediante arbol generador mínimo. 
+   - Tecnologías utilizadas: Java
+   - [Repositorio](https://gitlab.com/Nico2k20/tpn2gruposkynet)
+7. Agenda de contactos: Trabajo práctico universitario. Agenda de contactos personal.
+   - Tecnologías utilizadas: Java
+   - [Repositorio](https://gitlab.com/VanesaVera/tp-inicial-merlos-vera)
+8. Base de datos de tarjetas de crédito: Trabajo práctico universitario. Modelado de una base de datos de tarjetas de crédito.
+   - Tecnologías utilizadas: PostgresSQL, BoltDB y Go
+   - [Repositorio](https://gitlab.com/federiconahuellencina/lencina-merlos-sanchez-zanardi-tp)
+9. 2048: Trabajo práctico universitario. Juego 2048. 
+   - Tecnologías utilizadas: Java
+   - [Repositorio](https://gitlab.com/estebanmerlos33/tp-1-p3-version-final)
+10. Juego Super Elisabeth Sis: Trabajo práctico universitario. Juego Super Elisabeth Sis. 
+   - Tecnologías utilizadas: Java
+   - [Repositorio](https://gitlab.com/estebanmerlos33/trabajo-grupal-programaci-n-i-grupo-2)
+11. Proyecto Icarus: Trabajo práctico universitario. Proyecto de control y administración de vuelos.
+   - Tecnologías utilizadas: HTML, CSS, Javascript, Leaflet y metodologías ágiles Scrum y SAFe
+   - [Repositorio](https://gitlab.com/Nico2k20/proyecto-icarus)
+
 
 Puedes explorar mis proyectos en mi [perfil de GitHub](https://github.com/estebanmerlos33).
 
