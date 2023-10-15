@@ -30,34 +30,14 @@ body {
     rgb(23, 66, 114) 100%
   );
 
-  background-repeat: space;
-
   margin: 0;
   margin: auto;
   color: var(--colorFuente);
-
   height: fit-content;
   width: 95vw;
-
   overflow-y: auto;
   overflow-x: hidden;
 }
-
-/*
-body {
-  
-  background: var(--bgColor);
-  background-repeat: no-repeat;
-  position: relative;
-  margin: 0;
-  margin: auto;
-  padding: 0;
-  width: 95vw;
-  height: fit-content;
-  color: var(--colorFuente);
-  margin-top: 1%;
-}
-*/
 
 #container {
   display: flex;
@@ -373,6 +353,7 @@ form button:hover {
   max-width: 1200px;
   margin: 0 auto;
   font-size: var(--tamanoDos);
+  margin-bottom: 3%;
 }
 
 /* The actual timeline (the vertical ruler) */
