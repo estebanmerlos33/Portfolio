@@ -142,30 +142,6 @@ a:active {
   font-size: var(--tamanoUno);
 }
 
-#containerFoto {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: fit-content;
-  justify-content: center;
-  flex-shrink: 0.5;
-  flex-grow: 0;
-}
-
-#circulo {
-  background: rgb(150, 154, 156);
-  border-radius: 50%;
-  width: 10em;
-  height: 10em;
-}
-
-#containerFoto img {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
 #containerSaludo {
   display: flex;
   flex-direction: column;
