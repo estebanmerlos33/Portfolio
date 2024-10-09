@@ -1,217 +1,538 @@
 :root {
-    --tamanoFuenteNav: 30px;
-    --tamanoFuenteSeccion: 20px;
+  --bgColor: rgb(28, 44, 63);
+
+  --fuente: Noe Display, Georgia, Tahoma;
+  --colorFuente: rgb(160, 169, 187);
+  --colorFuenteNav: rgb(212, 208, 208);
+  --colorBgNav: rgb(28, 55, 83);
+  --colorFuentePreTitulo: rgb(236, 116, 100);
+  --colorFuenteTitulo: rgb(230, 216, 216);
+  --colorForm: rgb(24, 57, 95);
+  --tamanoIconos: 10em;
+  --tamanoCero: 0.8em;
+  --tamanoUno: 1em;
+  --tamanoDos: 2em;
+  --tamanoDosYMedio: 2.5em;
+  --tamanoTres: 3em;
+  --tamanoCuatro: 4em;
 }
 
 html {
-    scroll-behavior: smooth;
-
+  margin: 0;
+  height: fit-content;
 }
-
-/*
-body:before {
-
-    content: "";
-    position: fixed;
-
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-
-    z-index: -1;
-    background: #D8D8D8;
-    background: linear-gradient(150deg, #ff983f 0, #ff8847 12.5%, #ff764d 25%, #ff6551 37.5%, #f25353 50%, #dd4253 62.5%, #c93454 75%, #b72954 87.5%, #a72055 100%);
-}
-*/
 body {
-    position: relative;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  background: rgb(29, 48, 70);
+  background: linear-gradient(
+    135deg,
+    rgb(29, 48, 70) 23%,
+    rgb(23, 66, 114) 100%
+  );
 
-    width: 100vw;
-    height: 95vh;
-    /*box-sizing: content-box;*/
+  margin: 0;
+  margin: auto;
+  color: var(--colorFuente);
+  height: fit-content;
+  width: 95vw;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-
 
 #container {
-    display: flex;
-    position: relative;
-    width: 95%;
-    height: 95%;
-    margin: 10px;
-
-    flex-direction: column;
-    outline: solid green 7px;
-    box-sizing: border-box;
-    justify-content: space-evenly;
-
-
-    /*overflow-x: hidden;*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  gap: 1%;
+  margin-bottom: 1%;
 }
 
 nav {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    outline: pink solid 3px;
-    align-self: flex-start;
-
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 5em;
+  background-color: var(--colorBgNav);
+  
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
-#accesosNav {
-    display: flex;
-    width: 100vw;
-    justify-content: space-evenly;
+.atajoNav {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--tamanoDos);
+  color: var(--colorFuente);
 
-}
-
-#accesosNav div {
-    font: var(--tamanoFuenteNav) black;
-    align-self: center;
-
-}
-
-
-
-
-/*
-header {
-    position: fixed;
-    display: flex;
-    margin: 50px;
-    background-image: linear-gradient(215deg, #ff983f 0, #ff8847 12.5%, #ff764d 25%, #ff6551 37.5%, #f25353 50%, #dd4253 62.5%, #c93454 75%, #b72954 87.5%, #a72055 100%);
-}
-*/
-
-.atajoNav a {
-    color: black;
-}
-
-/* Unvisited link  */
-.atajoNav a:visited {
-    color: black;
-}
-
-/* Visited link    */
-.atajoNav a:hover {
-    color: #FF00FF;
-}
-
-/* Mouse over link */
-.atajoNav a:active {
-    color: #0000FF;
-}
-
-
-
-/*
-nav {
-
-    width: 100%;
-    height: 2rem;
-    padding-top: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-
-}
-
-ul {
-    list-style: none;
 }
 
 a {
-    color: black
+  color: var(--colorFuenteNav);
 }
 
-nav li {
-    color: white;
-    padding: 0.3rem;
-    font-family: sans-serif;
-    font: solid black;
-    font-size: 1.2rem;
-
+/* Unvisited link  */
+a:visited {
+  color: var(--colorFuenteNav);
 }
 
-header div {
-    display: inline;
-    padding: 0.5rem 0.5rem;
-    border-radius: 10%;
+a:link {
+  transition-duration: 0.5s;
 }
 
-header div:hover {
-    background-color: rgb(236, 91, 6);
-    transition-duration: 1s;
+/* Visited link*/
+a:hover {
+  color: white;
+  transition-duration: 0.7s;
 }
 
-
-
-#input-nav {
-    display: none;
+/* Mouse over link */
+a:active {
+  color: var(--colorFuenteNav);
 }
 
-#input-nav:checked~nav {
-    display: flex;
+#preTitulo {
+  font-size: var(--tamanoUno);
+  color: var(--colorFuentePreTitulo);
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 1%;
 }
 
-
-label {
-
-    height: 5rem;
-    flex-shrink: 0;
-    display: block;
-    padding: 1rem 0rem 0em 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+#titulo {
+  width: 100%;
+  font-weight: bold;
+  font-size: var(--tamanoCuatro);
+  color: var(--colorFuenteTitulo);
 }
 
+.seccion {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-shrink: 0.5;
+  flex-grow: 0;
+  flex-direction: column;
+  min-height: min-content;
+  margin-bottom: 1%;
+}
 
-span::before {
-    content: "";
-    display: block;
-    width: 2rem;
-    height: 2px;
-    background-color: white;
-    margin-bottom: 0.5rem;
+.tituloSeccion {
+  display: block;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 3%;
+  font-size: var(--tamanoTres);
+  color: var(--colorFuenteTitulo);
+}
+
+.subTituloSeccion {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: var(--tamanoDos);
+  color: var(--colorFuenteTitulo);
+}
+
+.contenidoSeccion {
+  margin-bottom: 3%;
+  font-size: var(--tamanoUno);
+}
+
+#containerSaludo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 0.5%;
+}
+
+.saludo {
+  display: block;
+}
+
+/*-----------------------------Typing-----------------------------*/
+
+.typing-demo {
+  width: 23.5ch;
+  animation: typing 8s steps(22) infinite,
+    blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  margin-bottom: 5%;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  20%,
+  80% {
+    width: 23.5ch;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.contenidoHabilidades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+  gap: 5%;
+  height: fit-content;
+  justify-content: space-evenly;
+  align-self: center;
+  margin-bottom: 1%;
+  font-size: var(--tamanoCero);
+}
+
+.contenidoHabilidades img {
+  width: var(--tamanoIconos);
+  height: var(--tamanoIconos);
+  margin-bottom: 3%;
+}
+
+.contenidoHabilidades svg {
+  width: var(--tamanoIconos);
+  height: var(--tamanoIconos);
+  margin-bottom: 3%;
+}
+
+#habilidades {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.containerProyectos {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+.proyecto {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  border: solid 1px white;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+
+.tituloProyecto {
+  font-size: var(--tamanoDosYMedio);
+  color: var(--colorFuenteTitulo);
+}
+
+.descripcionProyecto {
+  font-size: var(--tamanoDos);
+}
+
+#contacto {
+  display: flex;
+  align-self: center;
+  height: fit-content;
+  width: 100%;
+}
+
+#repositorios {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.campoForm {
+  display: block;
+  background-color: var(--colorForm);
+  resize: none;
+
+  width: 80%;
+  color: var(--colorFuente);
+  font: var(--tamanoDos);
+}
+
+#emailForm {
+  margin-bottom: 3%;
+}
+
+#mensajeForm {
+  margin-bottom: 3%;
+}
+
+#emailForm input {
+  height: 2em;
+}
+
+#mensajeForm textarea {
+  height: 12em;
+}
+
+form button {
+  margin-top: 1%;
+  background-color: var(--colorForm);
+  color: var(--colorFuente);
+  width: 10em;
+  height: fit-content;
+  font-size: 2vh;
+  transition-duration: 0.5s;
+}
+
+form button:hover {
+  background-color: var(--colorForm);
+  transition-duration: 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+  transition-duration: 1.5s;
+}
+
+.show {
+  opacity: 1;
 }
 */
+/*---------------------------Timeline-------------------------------------*/
 
-#foto {
-    display: flex;
-    flex-basis: auto;
-    flex-shrink: 100;
-    height: 10vh;
-    width: 10vh;
+
+#lineaTiempo {
+  position: relative;
+  height: fit-content;
+}
+
+.timeline * {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: var(--tamanoDos);
+  margin-bottom: 5%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: rgb(21, 82, 131);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 1px 1px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  border: 5px solid rgb(6, 43, 77);
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid #294279;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Circle on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 20px;
+  background-color: rgb(17, 65, 110);
+  position: relative;
+  border-radius: 10px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    --tamanoCero: 0.5em;
+    --tamanoUno: 1.3em;
+    --tamanoDos: 2.5em;
+    --tamanoTres: 3em;
+    --tamanoCuatro: 4em;
+    --tamanoIconos: 4em;
+  }
+
+  html {
+    font-size: calc(15px + 0.390625vw);
+  }
+
+  nav {
+    font-size: var(--tamanoCero);
+  }
+
+  #circulo {
+    background: rgb(150, 154, 156);
     border-radius: 50%;
-    background-color: red;
-    margin: 0 auto;
-}
+    width: 10em;
+    height: 10em;
+  }
 
+  .seccion {
+    margin-bottom: 0.5%;
+  }
 
-.seccionPortfolio {
+  .tituloSeccion {
+    font-size: var(--tamanoDos);
+  }
 
-    outline: blue solid 3px;
+  .subTituloSeccion {
+    font-size: var(--tamanoUno);
+  }
 
-    font: var(--tamanoFuenteNav) black;
-    width: 95%;
-    height: 100px;
+  .contenidoSeccion {
+    font-size: var(--tamanoUno);
+  }
 
-}
+  .timeline {
+    font-size: var(--tamanoUno);
+  }
 
+  .tituloProyecto {
+    font-size: var(--tamanoDos);
+  }
 
-/*
-.cuadrado {
-    outline: solid blue 3px;
-    margin: 20px;
-    height: 150px;
-    width: 150px;
+  .descripcionProyecto {
+    font-size: var(--tamanoUno);
+  }
 
+  .typing-demo {
+    width: 22ch;
+    animation: typing 8s steps(22) infinite,
+      blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    margin-bottom: 5%;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    20%,
+    80% {
+      width: 22ch;
+    }
+
+    100% {
+      width: 0;
+    }
+  }
+  .timeline {
+    font-size: var(--tamanoUno);
+    margin-bottom: 1%;
+  }
 }
